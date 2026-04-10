@@ -17,17 +17,6 @@ public class Calculator {
         System.out.println("  (D)ivide");
         System.out.print("Please select an option: ");
         String option = scan.next().toUpperCase();
-        if (option.equals("A")) {
-            System.out.printf("%f + %f = %f", first, second, first + second);
-        } else if (option.equals("S")) {
-            System.out.printf("%f - %f = %f", first, second, first - second);
-        } else if (option.equals("M")) {
-            System.out.printf("%f * %f = %f", first, second, first * second);
-        } else if (option.equals("D")) {
-            System.out.printf("%f / %f = %f", first, second, first / second);
-        } else {
-            System.out.print("Invalid option.");
-        }
-        System.out.println();
+        System.out.printf("%f * %f = %f\n", first, second, first * second);
     }
 }
